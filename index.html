@@ -1,28 +1,47 @@
 <!DOCTYPE html>
 <html lang="sv" dir="ltr">
+
   <head>
     <meta charset="utf-8">
     <title>forms</title>
   </head>
+
   <body>
+    <style media="screen">
+      form {
+        margin: 100px;
+      }
+    </style>
     <form>
-      <input type="text" name="username" placeholder="Enter a username">
+      <label for="userName">Username:</label>
+      <input type="text" name="username" placeholder="Enter a username" id="userName">
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password">
+    </form>
+    <form>
+      <p>Choose your favorite band</p>
+      <div>
+        <input type="radio" name="favBand" value="1" id="Rammstein">
+        <label for="Rammstein">Rammstein</label>
+      </div>
+      <div>
+        <input type="radio" name="favBand" value="2" id="ABBA">
+        <label for="ABBA">ABBA</label>
+      </div>
+      <div>
+        <input type="radio" name="favBand" value="3" id="NoS">
+        <label for="NoS">Nanowar of Steel</label>
+      </div>
 
-      <input type="password" name="password">
-
-      <input type="radio" name="favBand" value="1">
-      <input type="radio" name="favBand" value="2">
-      <input type="radio" name="favBand" value="3">
-      <input type="radio" name="favBand" value="4">
-      <input type="radio" name="favBand" value="5">
-
+    </form>
+    <form>
       <input type="checkbox" name="genre" value="1">
       <input type="checkbox" name="genre" value="2">
       <input type="checkbox" name="genre" value="3">
       <input type="checkbox" name="genre" value="4">
       <input type="checkbox" name="genre" value="5">
       <input type="checkbox" name="genre" value="6">
-
     </form>
   </body>
+
 </html>
